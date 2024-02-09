@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Webpage</title>
+    <script src="script.js"></script>
+    <style>
+       
+      .form {
+        border: 1px solid black;
+        padding: 20px 40px;
+        width: fit-content;
+        margin: 100px 600px;
+        height: fit-content;
+        background:linear-gradient(45deg,red,blue);
+        /* text-align: center; */
+      }
+      .form-element{
+        margin: 0 0 10px 0;
+        color: whitesmoke;
+        font-size: 20px;
+      }
+      .form-element input{
+        border-radius: 10px;
+        height: 40px;
+        /* width: 500px; */
+        border:none
+      }
+
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <div class="form-element">
+        <label for="firstname">First Name</label><br />
+        <input type="text" id="firstname" name="firstname" required />
+      </div>
+
+      <div class="form-element">
+        <label for="middlename">Middle Name</label><br />
+        <input type="text" id="middlename" name="middlename" />
+      </div>
+
+      <div class="form-element">
+        <label for="lastname">Last Name</label><br />
+        <input type="text" id="lastname" name="lastname" required />
+      </div>
+
+      <div class="form-element">
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="Email" required />
+      </div>
+
+      <div class="form-element">
+        <label for="password">Password</label><br />
+        <input type="password" id="password" name="Password" required />
+      </div>
+
+      <div class="form-element">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
